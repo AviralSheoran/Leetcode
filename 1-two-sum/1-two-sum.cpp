@@ -12,6 +12,6 @@ public:
                 }
             }
         }
-        return {-1,-1};
+        return {-1,-1}; // If there is no solution, You can use this or return null to return null from the function
     }
 };
