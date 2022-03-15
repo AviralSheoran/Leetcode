@@ -1,6 +1,8 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
+        // Brute Force
+        
         int count = 0;
        //  int n = nums.size();
         
