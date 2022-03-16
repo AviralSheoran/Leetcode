@@ -8,6 +8,10 @@ class Solution{
 public:
 	void merge(int arr1[], int arr2[], int n, int m) {
         
+        // Brute Force 
+        
+        // Just swapped the array by comparing it with arr2 and put all the 
+        // large elements in arr2 and small one's in arr1
         int i = n-1, j = 0;
         
         while(i>=0 && j < m) {
