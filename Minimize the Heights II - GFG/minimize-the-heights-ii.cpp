@@ -11,7 +11,7 @@ class Solution {
   public:
     int getMinDiff(int arr[], int n, int k) {
         
-        // Brute Force
+        // Two Pointer Approach
         
         // Sorted the array 
         sort(arr, arr+n);
