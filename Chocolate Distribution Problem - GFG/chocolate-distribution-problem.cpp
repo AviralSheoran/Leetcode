@@ -7,25 +7,20 @@ class Solution{
     public:
     long long findMinDiff(vector<long long> a, long long n, long long m){
         
+        int hola = a.size();
+
+        // Edge Cases
          if (m == 0 || n == 0)
         return 0;
-        
-        int hola = a.size();
-        
-    sort (a.begin(), a.end());
+        if (hola < m)
+        return -1;
+    
+        sort (a.begin(), a.end());
   
     
-    if (hola < m)
-        return -1;
-  
-    // Largest number of chocolates
     int min_diff = INT_MAX;
   
-    // Find the subarray of size m such that
-    // difference between last (maximum in case
-    // of sorted) and first (minimum in case of
-    // sorted) elements of subarray is minimum.
-  
+
     for (int i = 0; i + m - 1 < hola; i++) {
         int diff = a[i + m - 1] - a[i];
         if (diff < min_diff)
